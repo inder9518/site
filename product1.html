@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Info - TECHDROIDE</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    header {
+      background: linear-gradient(90deg, #4e54c8, #8f94fb);
+      color: white;
+      padding: 15px 30px;
+      border-radius: 20px;
+      margin: 20px auto;
+      max-width: 1100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .site-name {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #e0e0ff;
+    }
+    .container {
+      max-width: 700px;
+      margin: 60px auto;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 25px 30px;
+    }
+    .product-image {
+      width: 100%;
+      max-height: 350px;
+      object-fit: contain;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      margin-bottom: 15px;
+      color: #4e54c8;
+    }
+    .price {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #3a3a9d;
+      margin-bottom: 15px;
+    }
+    p.description {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      color: #333;
+    }
+    footer {
+      background-color: #2f2f2f;
+      color: #ccc;
+      padding: 30px 20px;
+      margin-top: 30px;
+      text-align: center;
+    }
+    footer .footer-links {
+      margin-top: 10px;
+    }
+    footer .footer-links a {
+      color: #aaa;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 0.95rem;
+    }
+    footer .footer-links a:hover {
+      color: #fff;
+    }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      .site-name {
+        margin-bottom: 10px;
+      }
+      .container {
+        margin: 30px 15px;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="site-name">TECHDROIDE</div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="product.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <img src="https://source.unsplash.com/700x350/?smartwatch" alt="Smartwatch X1" class="product-image" />
+    <h2>Smartwatch X1</h2>
+    <div class="price">₹ 7,999</div>
+    <p class="description">
+      Smartwatch X1 keeps you connected with notifications, heart rate monitoring, and fitness tracking.
+      Compatible with both Android and iOS devices, it offers customizable watch faces and water resistance up to 50 meters.
+    </p>
+  </div>
+
+  <footer>
+    <div>© 2025 TECHDROIDE. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="home.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="product.html">Products</a> |
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+</body>
+</html>
