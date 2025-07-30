@@ -42,7 +42,7 @@
     }
     .container {
       max-width: 1100px;
-      margin: 100px auto;
+      margin: 40px auto;
       padding: 20px;
     }
     .product-grid {
@@ -90,6 +90,26 @@
       background-color: #3c3fa3;
     }
 
+    footer {
+      background-color: #2f2f2f;
+      color: #ccc;
+      padding: 30px 20px;
+      margin-top: 30px;
+      text-align: center;
+    }
+    footer .footer-links {
+      margin-top: 10px;
+    }
+    footer .footer-links a {
+      color: #aaa;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 0.95rem;
+    }
+    footer .footer-links a:hover {
+      color: #fff;
+    }
+
     @media (max-width: 768px) {
       header {
         flex-direction: column;
@@ -115,7 +135,7 @@
   <div class="container">
     <h2 style="text-align:center; margin-bottom: 20px;">Our Products</h2>
     <div class="product-grid">
-      <!-- Repeatable Product Card -->
+      <!-- Product Cards (as given) -->
       <!-- 1 -->
       <div class="product-card">
         <img src="https://source.unsplash.com/300x200/?gadget" alt="Product 1" />
@@ -190,5 +210,15 @@
       </div>
     </div>
   </div>
+
+  <footer>
+    <div>© 2025 TECHDROIDE. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="home.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="product.html">Products</a> |
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
 </body>
 </html>
