@@ -26,9 +26,9 @@
       align-items: center;
       flex-wrap: wrap;
     }
-    .site-name {
-      font-size: 1.8rem;
-      font-weight: bold;
+    .site-name img.logo {
+      height: 50px;
+      width: auto;
     }
     nav {
       display: flex;
@@ -122,21 +122,23 @@
         justify-content: space-between;
       }
       .product-card {
-        width: 48%; /* 2 cards per row on mobile */
+        width: 48%;
       }
     }
 
     /* Optional: For very small screens like 400px and below */
     @media (max-width: 450px) {
       .product-card {
-        width: 100%; /* 1 card per row on extra small screens */
+        width: 100%;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="site-name">TECHDROIDE</div>
+    <div class="site-name">
+      <img src="logo.png" alt="TECHDROIDE Logo" class="logo">
+    </div>
     <nav>
       <a href="home.html">Home</a>
       <a href="about.html">About</a>
