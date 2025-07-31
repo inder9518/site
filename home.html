@@ -109,6 +109,7 @@
       color: #fff;
     }
 
+    /* ✅ Mobile Responsive: 2 product cards per row */
     @media (max-width: 768px) {
       header {
         flex-direction: column;
@@ -116,6 +117,19 @@
       }
       .site-name {
         margin-bottom: 10px;
+      }
+      .products {
+        justify-content: space-between;
+      }
+      .product-card {
+        width: 48%; /* 2 cards per row on mobile */
+      }
+    }
+
+    /* Optional: For very small screens like 400px and below */
+    @media (max-width: 450px) {
+      .product-card {
+        width: 100%; /* 1 card per row on extra small screens */
       }
     }
   </style>
